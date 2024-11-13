@@ -13,7 +13,7 @@ class AddContact extends React.Component {
             return
         }
         this.props.addContactHandler(this.state);
-        console.log(this.state);
+        this.setState({name:"", email:""});
     }
 
     render() {
